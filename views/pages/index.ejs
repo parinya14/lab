@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<?- include('../partials/head') -?>
+<body>
+<?- include('../partials/header') -?>
+<?- include('../partials/nav') -?>
+<div class="container text-center">
+<h1><?= pageData.title ?></h1>
+<p>Welcome to <?= pageData.title ?>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="http://www.starupdate.com/wp-content/uploads/2022/10/Group-shot.jpg" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://cms.dmpcdn.com/dara/2022/08/31/25c17290-28e5-11ed-a4d8-e79166671fd1_webp_original.jpg" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+       <img src="https://storage.googleapis.com/atime-media-prod/editor/content/ddfce11e-714b-4fdc-b85c-a41678ad86be.jpeg" class="d-block w-100" alt="">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</p>
+</div>
+<?- include('../partials/footer') -?>
+</body>
+</html>
